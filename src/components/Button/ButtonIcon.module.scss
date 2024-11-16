@@ -1,0 +1,26 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px 10px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgba(241,241,241,1);
+    user-select: none;
+    + .wrapper{
+        margin-left: 8px;
+    }
+}
+.icon {
+    display: inline-block;
+    text-align: center;
+    width: 24px;
+}
+.rounded {
+    border-radius: 100%;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+}

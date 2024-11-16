@@ -1,0 +1,149 @@
+.wrapper {
+    width: 90%;
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: row;
+    min-height: 9rem;
+
+    .image-wrapper {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+    .user-avatar {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        border-radius: 50%;
+    }
+
+    .main-container {
+        
+      //  margin: 5px 10px 0;
+        width:80%;
+        padding: 5px 10px;
+        flex-grow: 1;
+        position: relative;
+        .user-title {
+            font-size: 20px;
+        }
+
+        .comment {
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        .timecreate {
+            color: rgba(22, 24, 35, 0.5);
+            margin-top: 5px;
+            font-weight: 200;
+        }
+    }
+    .delete-button {
+        background-color: white;
+        color: black;
+        border: none;
+        cursor: pointer;
+    }
+}
+.parent_wrapper {
+    width: 100%;
+    height: 7rem;
+    position:relative;
+}
+.newcomment-edit {
+    width: 100%;
+    height: 7rem;
+    border: 1px solid rgb(22,24,35,0.5);
+    resize: none;
+    outline:none;
+}
+.emoji_style{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    font-size: 17px;
+    &:hover{
+        color: var(--primary);
+    }
+}
+.send_style{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 17px;
+    &:hover{
+        color: var(--primary);
+    }
+}
+.dot-wrapper {
+    position: absolute;
+    top:7px;
+    right: 10px;
+    width: min-content;
+    height: min-content;
+}
+.dot-icon {
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 300;
+    margin-top: 1px;
+    cursor: pointer;
+    opacity: 0; /* handle icon default */
+    transition: opacity 0.3s; 
+}
+.main-container:hover .dot-icon {
+    opacity: 1;
+}
+.wrapper-dedot {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+}
+.wrapper-decom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    &:hover {
+        color: var(--primary);
+        cursor: pointer;
+    }
+}
+.title-btn {
+    font-family: var(--font-family);
+    font-size:1.5rem;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-edit {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-info{
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// .dot-wrapper .dot-icon {
+//     opacity: 1; /* Cho dot icon hiển thị khi Tippy mở */
+//     transition: opacity 0.3s;
+// }
+// .dot-wrapper .dot-icon.active {
+//     opacity: 0.5; /* Thay đổi khi Tippy mở */
+// }

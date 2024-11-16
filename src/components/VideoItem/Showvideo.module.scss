@@ -1,0 +1,119 @@
+.wrapper {
+    width: 790px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: 45px auto;
+
+    .AuthorContentWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 40px;
+        .AvatarLink {
+            text-decoration: none;
+            width: max-content;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .user-avatar {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-left: 12px;
+                cursor: pointer;
+            }
+        }
+        .author-title {
+            width: max-content;
+            margin: auto 10px;
+            color: black;
+        }
+        .postinfo-container {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            .Main-ContentWrapper {
+                display: flex;
+                flex-direction: column;
+                margin: 0 20px;
+                .span-text {
+                    color: black;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+                .maincontain-wrapper {
+                    p {
+                        font-size: 1.5rem;
+                        font-family: var(--font-family);
+
+                    }
+                }
+            }
+            .Final-MainWrapper {
+                display: flex;
+                flex-direction: row;
+                margin: 12px 20px;
+                align-items: center;
+                .music-note,
+                .span-text-music {
+                    color: black;
+                    font-weight: 200;
+                    font-size: 12px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .follow-container {
+        }
+    }
+    .Actionvideowrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin: 10px auto;
+        width: 80%;
+        height: max-content;
+        .video-container {
+            width: 90%;
+            margin: 0 30px;
+            .video-itemone {
+                display: block;
+                // height: calc(16/9 * width);
+                border-radius: 10px;
+            }
+        }
+
+        .ActionContainer {
+            display: flex;
+            flex-direction: column;
+            align-self: end;
+            height: max-content;
+            width: min-content;
+            margin: 0 20px;
+            .likeaction,
+            .commentaction {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .likeaction {
+                .btnlike,
+                .alllike {
+                    margin-top: 10px;
+                }
+                .likevideo {
+                    color: rgb(232, 21, 134);
+                }
+            }
+            .commentaction {
+                .btncomment,
+                .allcomment {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

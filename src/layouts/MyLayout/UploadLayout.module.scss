@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(22,24,35,0.06);
+    min-height: 100vh;
+}
+
+.container {
+    width: 1150px;
+    height: 100%;
+    padding: 0 var(--default-layout-horizontal-spacer);
+    display: flex;
+}
+.wrapper-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(148, 148, 148, 0.411);
+    & > :first-child {
+        margin: auto;
+    }
+  }
